@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "strictNullChecks": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+    },
+    "extends": "expo/tsconfig.base"
+  }
+  
