@@ -2,8 +2,9 @@ import { StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         flexDirection: 'column',
+        width: 150,
+        height: 40
     },
     input: {
       flex: 1,
@@ -14,17 +15,17 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       borderColor: 'gray',
       label: {
-        fontSize: '12px',
+        fontSize: 12,
         fontWeight: 'bold',
-        color: 'black',
+        color: 'gray',
       },
       sublabel: {
-        fontSize: '8px',
+        fontSize: 8,
         fontWeight: 'bold',
         color: 'gray',
       },
       sublabelError: {
-        fontSize: '8px',
+        fontSize: 8,
         fontWeight: 'bold',
         color: 'red',
       },

@@ -2,17 +2,19 @@ import { StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     opacity: {
-      flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
       borderStyle: 'solid',
-      borderWidth: 1,
+      borderWidth: 2,
       borderColor: 'gray',
+      width: 100,
+      height: 50,
+      borderRadius: 8,
     },
     title: {
-      fontSize: '12px',
-      fontWeight: 'bold',
+      fontSize: 20,
+      fontWeight: "400",
       color: 'black',
     }
   });

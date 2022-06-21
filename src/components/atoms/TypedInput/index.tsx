@@ -1,6 +1,7 @@
-import {TextInput} from 'react-native';
+import {StyleProp, TextInput, TextStyle} from 'react-native';
+import { TypedInputInterface } from './interface';
 
-const inputType = ({type, styles, value, onChangeText}) => {
+const inputType = (type : string, styles : StyleProp<TextStyle>, value: string, onChangeText : any) => {
 
     switch(type){
         case 'text':
@@ -31,7 +32,10 @@ const inputType = ({type, styles, value, onChangeText}) => {
 
 }
 
-function TypedInput({type, styles, value, onChangeText}) {
+function TypedInput(props : TypedInputInterface) {
+
+  const {type, styles, value, onChangeText} = props;
+
   return inputType(type, styles, value, onChangeText);
 }
 
