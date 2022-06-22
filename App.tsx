@@ -16,14 +16,39 @@ export default function App() {
           onPress={() => console.log('Submited')}
           value={"Increase"}
       /> */}
-      <TextInput
+      {/* <TextInput
         type='text'
         // containerStyle={}
         // labelStyle={styles.title}
         // sublabelStyle={styles.sublabel}
-        // inputStyle={styles.title}
-        label={"Name"}
-        />
+          inputStyle={styles.inputStyle}
+          label={"Name"}
+          onError={true}
+          onErrorStyle={styles.errorMessage}
+          onErrorMessage={"Please enter a name"}
+          />
+      <TextInput
+          type='numeric'
+          // containerStyle={}
+          // labelStyle={styles.title}
+          // sublabelStyle={styles.sublabel}
+          inputStyle={styles.inputStyle}
+          label={"Age"}
+          onError={true}
+          onErrorStyle={styles.errorMessage}
+          onErrorMessage={"Please enter your age"}
+          />
+       <TextInput
+          type='textarea'
+          // containerStyle={}
+          // labelStyle={styles.title}
+          // sublabelStyle={styles.sublabel}
+          inputStyle={styles.textAreaStyle}
+          label={"Comments"}
+          onError={true}
+          onErrorStyle={styles.errorMessage}
+          onErrorMessage={"Please enter your age"}
+          /> */}
     </View>
   );
 }
@@ -32,11 +57,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    paddingTop: 40,
+    paddingLeft: 40,
   },
   label: {
-    fontSize: 14
+    fontSize: 12
   },
   button:{
     backgroundColor: 'green',
@@ -54,5 +81,25 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     fontWeight: '400',
     color: 'green'
+  },
+  errorMessage:{
+    fontSize: 14,
+    fontStyle: 'italic',
+    fontWeight: '400',
+    color: 'red'
+  },
+  inputStyle:{
+    width: 300,
+    height: 50,
+    borderStyle: 'solid',
+    borderBottomWidth: 1,
+    borderColor: 'gray'
+  },
+  textAreaStyle:{
+    width: 300,
+    paddingTop: 0,
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: 'gray',
   }
 });

@@ -17,6 +17,8 @@ const inputType = (type : string, styles : StyleProp<TextStyle>, value: string, 
             keyboardType="default"
             value={value}
             numberOfLines={5}
+            maxLength={140}
+            multiline
             onChangeText={onChangeText}
           />        
           case 'numeric': 

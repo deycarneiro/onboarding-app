@@ -8,5 +8,8 @@ export interface InputInterface {
     sublabelStyle?: any,
     sublabel?: string,
     onChangeText?: () => void,
-    value?: string
+    value?: any,
+    onError?: boolean,
+    onErrorStyle?: any,
+    onErrorMessage?: string
 }

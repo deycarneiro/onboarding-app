@@ -2,12 +2,11 @@ import { StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'column',
-        width: 150,
-        height: 40
+        flexDirection: 'column'
     },
     input: {
-      flex: 1,
+      width: 150,
+      height: 30,
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
