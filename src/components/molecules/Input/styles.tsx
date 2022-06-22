@@ -2,7 +2,8 @@ import { StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'column'
+        flexDirection: 'column',
+        marginBottom: 20
     },
     input: {
       width: 150,

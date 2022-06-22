@@ -28,6 +28,14 @@ const inputType = (type : string, styles : StyleProp<TextStyle>, value: string, 
             keyboardType="numeric"
             onChangeText={onChangeText}
           />
+          case 'password':
+            return  <TextInput
+            style={styles}
+            keyboardType="default"
+            secureTextEntry={true}
+            value={value}
+            onChangeText={onChangeText}
+          />     
         default:
             return <Text>Not recognized type</Text>
     }

@@ -1,6 +1,6 @@
 
 export interface InputInterface {
-    type: 'text' | 'textarea' | 'numeric',
+    type: 'text' | 'textarea' | 'numeric' | 'password',
     containerStyle?: any,
     labelStyle?: any,
     label: string,

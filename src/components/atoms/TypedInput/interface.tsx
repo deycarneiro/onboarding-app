@@ -1,7 +1,7 @@
 import { StyleProp, TextStyle } from "react-native";
 
 export interface TypedInputInterface {
-    type: 'text' | 'textarea' | 'numeric', 
+    type: 'text' | 'textarea' | 'numeric' | 'password', 
     styles?: StyleProp<TextStyle>, 
     value: string, 
     onChangeText: () => void,
