@@ -7,7 +7,7 @@ export interface InputInterface {
     inputStyle?: any,
     sublabelStyle?: any,
     sublabel?: string,
-    onChangeText?: () => void,
+    onChangeText?: (text : any) => void,
     value?: any,
     onError?: boolean,
     onErrorStyle?: any,
