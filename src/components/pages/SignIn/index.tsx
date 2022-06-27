@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 
 export default function SignInPage() {
 
-  const formRef = useRef(null);
+  const formRef = useRef();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -48,7 +48,7 @@ export default function SignInPage() {
       onChangePassword={(value) => { setPassword(value) }}
       onErrorPassword={false}
       onErrorEmail={false}
-      onSubmit={handleSubmit({ email: email, password: password })}
+      onSubmit={() => handleSubmit({ email: email, password: password })}
       formRef={formRef} />);
 
 }

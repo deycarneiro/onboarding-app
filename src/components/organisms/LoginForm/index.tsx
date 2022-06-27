@@ -11,6 +11,10 @@ export default function LoginForm(props: LoginFormInterface) {
   const { valueEmail, valuePassword, onChangePassword, onChangeEmail,
     onErrorEmail, onErrorPassword, onSubmit, formRef} = props;
 
+  const handleSubmit = () => {
+    return formRef.current.submitForm()
+  }
+
   return (
     <Form ref={formRef} onSubmit={onSubmit}>
       <TextInput
@@ -35,7 +39,7 @@ export default function LoginForm(props: LoginFormInterface) {
       />
       <Button
         type='opacity'
-        onPress={formRef.current.submitForm()}
+        onPress={handleSubmit}
         buttonStyle={styles.button}
         textStyle={styles.textButton}
         value={"Login"}

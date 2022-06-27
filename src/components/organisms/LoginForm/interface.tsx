@@ -7,6 +7,6 @@ export interface LoginFormInterface {
     onErrorPassword?: boolean,
     onErrorEmail?: boolean,
     onSubmit: any,
-    formRef: React.RefObject<any>;
+    formRef: any;
   }
   
